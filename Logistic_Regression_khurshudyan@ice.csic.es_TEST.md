@@ -13,6 +13,7 @@
 [https://towardsdatascience.com/logistic-regression-detailed-overview-46c4da4303bc](https://towardsdatascience.com/logistic-regression-detailed-overview-46c4da4303bc)
 
 **Answer:**
+<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
 
 To predict which class a data belongs, a threshold can be set. Based upon this threshold, the obtained estimated probability is classified into classes.
 Say, if predicted_value $\geq 0.5$, then classify email as spam else as not spam.
