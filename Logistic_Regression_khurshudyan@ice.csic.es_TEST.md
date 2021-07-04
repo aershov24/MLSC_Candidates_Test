@@ -20,12 +20,12 @@ Say, if predicted_value > 0.5, then classify email as spam else as not spam.
 Decision boundary can be linear or non-linear. Polynomial order can be increased to get complex decision boundary.
 
 
-## **Q: Which of the following evaluation metrics can not be applied in case of logistic regression output to compare with target?
+## **Q: Which of the following evaluation metrics can not be applied in case of logistic regression output to compare with target?**
 
-1. AUC-ROC
-1. Accuracy
-1. Logloss
-1. Mean-Squared-Error **
+## 1. AUC-ROC
+## 1. Accuracy
+## 1. Logloss
+## 1. Mean-Squared-Error
 
 **Difficulty:** Medium
 
