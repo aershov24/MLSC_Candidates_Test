@@ -2,5 +2,5 @@
 
 **Author:** Martiros Khurshudyan
 
-**QAs Total:* 3
+**QAs Total:** 3
 
