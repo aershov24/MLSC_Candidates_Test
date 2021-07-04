@@ -15,7 +15,7 @@
 **Answer:**
 
 To predict which class a data belongs, a threshold can be set. Based upon this threshold, the obtained estimated probability is classified into classes.
-Say, if predicted_value \geq 0.5, then classify email as spam else as not spam.
+Say, if predicted_value $\geq 0.5$, then classify email as spam else as not spam.
 Decision boundary can be linear or non-linear. Polynomial order can be increased to get complex decision boundary.
 
 
