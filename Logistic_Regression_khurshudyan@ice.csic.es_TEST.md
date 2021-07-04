@@ -1,4 +1,4 @@
-## Heading **Topic: Logistic Regression**
+## **Topic: Logistic Regression**
 <br>
 **Author:** Martiros Khurshudyan
 <br>
