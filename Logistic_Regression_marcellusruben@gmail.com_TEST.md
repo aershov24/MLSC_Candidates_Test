@@ -1,14 +1,19 @@
 # Topic: Logistic Regression
 
 **Author**: Ruben Winastwan
+
 **QAs Total**: 3
+
 ---
 ### Q: Could you explain what Logistic Regression is and when should we use it?
 **Difficulty:** `Junior`
 
-**Source**: https://www.analyticsvidhya.com/blog/2021/05/20-questions-to-test-your-skills-on-logistic-regression/
+**Source**:
+
+https://www.analyticsvidhya.com/blog/2021/05/20-questions-to-test-your-skills-on-logistic-regression/
 
 **Answer**:
+
 Logistic Regression is a classification algorithm that is used where the target variable is of categorical nature. The main objective behind Logistic Regression is to determine the relationship between features and the probability of a particular outcome.
 
 For example, when we need to predict whether a student passes or fails in an exam given the number of hours spent studying as a feature, the target variable comprises two values i.e. pass and fail.
@@ -20,9 +25,11 @@ For example, when we need to predict whether a student passes or fails in an exa
 **Difficulty:** `Medium`
 
 **Source**:
+
 https://www.analyticsvidhya.com/blog/2017/08/skilltest-logistic-regression/
 
 **Answer**:
+
 What can we infer:
 - Left: the model underfits the data. It will give us the maximum error compared to other two models.
 - Center: best fitting model.
@@ -34,11 +41,13 @@ What can we do to fix the problem:
 - Right: add regularization method to the model.
 
 ---
+
 ### Q: Imagine that you know there are outliers in your data, would you use Logistic Regression as your model? If yes, why? If not, could you recommend a better model?
 
 **Difficulty:** `Senior`
 
 **Source**:
+
 - https://www.analyticsvidhya.com/blog/2021/05/20-questions-to-test-your-skills-on-logistic-regression/
 - https://www.elderresearch.com/blog/jump-start-your-modeling-with-random-forests/
 
