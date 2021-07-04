@@ -40,14 +40,14 @@ The reasons why linear regressions cannot be used in case of binary classificati
 1. Variance of Residual errors: Linear regression assumes that the variance of random errors is constant. This assumption is also violated in case of logistic regression.
 
 
-## **Q: Why sigmoid function?**
+## **Q: Explain the use of ROC curves and the AUC of an ROC Curve**
 
 **Difficulty:** Senior
 
 **Source:**
 
-[https://www.quora.com/Logistic-Regression-Why-sigmoid-function](https://www.quora.com/Logistic-Regression-Why-sigmoid-function)
+[https://www.upgrad.com/blog/machine-learning-interview-questions-answers-logistic-regression/](https://www.upgrad.com/blog/machine-learning-interview-questions-answers-logistic-regression/)
 
 **Answer:**
 
-One of the nice properties of logistic regression is that the sigmoid function outputs the conditional probabilities of the prediction, the class probabilities. How does it work? Let's start with the so-called "odds ratio" $\frac{p}{1 - p}$, which describes the ratio between the probability that a certain, positive, event occurs and the probability that it doesn't occur - where positive refers to the "event that we want to predict", i.e., $p(y=1|x)$.
+An ROC (Receiver Operating Characteristic) curve illustrates the performance of a binary classification model. It is basically a TPR versus FPR (true positive rate versus false-positive rate) curve for all the threshold values ranging from 0 to 1. In a ROC curve, each point in the ROC space will be associated with a different confusion matrix. A diagonal line from the bottom-left to the top-right on the ROC graph represents random guessing. The Area Under the Curve (AUC) signifies how good the classifier model is. If the value for AUC is high (near 1), then the model is working satisfactorily, whereas if the value is low (around 0.5), then the model is not working properly and just guessing randomly.
