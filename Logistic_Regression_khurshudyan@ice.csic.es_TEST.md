@@ -32,12 +32,14 @@ Decision boundary can be linear or non-linear. Polynomial order can be increased
 No, we do not need to standardize the values present in the feature space, which we have to use to train the logistic regression model. So, the answer to this question would be FALSE. We choose to standardize all our values to help the function (usually gradient descent), which is responsible for making the algorithm converge on a value. Since this algorithm is relatively simple, it does not need the amounts to be scaled for it actually to have a significant difference in its performance.
 
 
-## **Q: Explain how to use Standard Deviation for Anomalies Detection?**
+## **Q: Why sigmoid function?**
 
 **Difficulty:** Senior
 
 **Source:**
 
-[https://towardsdatascience.com/5-ways-to-detect-outliers-that-every-data-scientist-should-know-python-code-70a54335a623](https://towardsdatascience.com/5-ways-to-detect-outliers-that-every-data-scientist-should-know-python-code-70a54335a623)
+[https://www.quora.com/Logistic-Regression-Why-sigmoid-function](https://www.quora.com/Logistic-Regression-Why-sigmoid-function)
 
 **Answer:**
+
+One of the nice properties of logistic regression is that the sigmoid function outputs the conditional probabilities of the prediction, the class probabilities. How does it work? Let's start with the so-called "odds ratio" \frac{p}{1 - p}, which describes the ratio between the probability that a certain, positive, event occurs and the probability that it doesn't occur -- where positive refers to the "event that we want to predict", i.e., p(y=1 | x).
