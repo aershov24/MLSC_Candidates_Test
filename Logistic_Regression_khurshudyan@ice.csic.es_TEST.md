@@ -26,7 +26,7 @@ Decision boundary can be linear or non-linear. Polynomial order can be increased
 
 **Source:**
 
-[https://www.upgrad.com/blog/machine-learning-interview-questions-answers-logistic-regression/]https://www.upgrad.com/blog/machine-learning-interview-questions-answers-logistic-regression/)
+[https://www.upgrad.com/blog/machine-learning-interview-questions-answers-logistic-regression]https://www.upgrad.com/blog/machine-learning-interview-questions-answers-logistic-regression/)
 
 
 **Answer:**
