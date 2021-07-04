@@ -1,6 +1,6 @@
-Topic: Logistic Regression
+## Heading **Topic: Logistic Regression**
 <br>
-Author: Martiros Khurshudyan
+**Author:** Martiros Khurshudyan
 <br>
-QAs Total: 3
+**QAs Total:* 3
 
