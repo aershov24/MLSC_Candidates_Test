@@ -15,7 +15,7 @@
 **Answer:**
 
 To predict which class a data belongs, a threshold can be set. Based upon this threshold, the obtained estimated probability is classified into classes.
-Say, if predicted_value ≥ 0.5, then classify email as spam else as not spam.
+Say, if predicted_value $≥ 0.5$, then classify email as spam else as not spam.
 Decision boundary can be linear or non-linear. Polynomial order can be increased to get complex decision boundary.
 
 
@@ -42,4 +42,4 @@ No, we do not need to standardize the values present in the feature space, which
 
 **Answer:**
 
-One of the nice properties of logistic regression is that the sigmoid function outputs the conditional probabilities of the prediction, the class probabilities. How does it work? Let's start with the so-called "odds ratio" \frac{p}{1 - p}, which describes the ratio between the probability that a certain, positive, event occurs and the probability that it doesn't occur -- where positive refers to the "event that we want to predict", i.e., p(y=1 | x).
+One of the nice properties of logistic regression is that the sigmoid function outputs the conditional probabilities of the prediction, the class probabilities. How does it work? Let's start with the so-called "odds ratio" $\frac{p}{1 - p}$, which describes the ratio between the probability that a certain, positive, event occurs and the probability that it doesn't occur - where positive refers to the "event that we want to predict", i.e., $p(y=1|x)$.
