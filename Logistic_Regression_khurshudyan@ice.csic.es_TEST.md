@@ -4,15 +4,17 @@
 
 **QAs Total:** 3
 
-## **Q: Explain how to use Standard Deviation for Anomalies Detection?**
+## **Q: What is decision boundary in Logistic Regression?**
 
 **Difficulty:** Junior
 
 **Source:**
 
-[https://towardsdatascience.com/5-ways-to-detect-outliers-that-every-data-scientist-should-know-python-code-70a54335a623](https://towardsdatascience.com/5-ways-to-detect-outliers-that-every-data-scientist-should-know-python-code-70a54335a623)
+[https://towardsdatascience.com/logistic-regression-detailed-overview-46c4da4303bc](https://towardsdatascience.com/logistic-regression-detailed-overview-46c4da4303bc)
 
 **Answer:**
+
+
 
 ## **Q: Explain how to use Standard Deviation for Anomalies Detection?**
 
