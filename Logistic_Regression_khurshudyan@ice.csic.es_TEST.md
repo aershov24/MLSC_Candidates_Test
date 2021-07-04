@@ -16,21 +16,28 @@
 
 
 To predict which class a data belongs, a threshold can be set. Based upon this threshold, the obtained estimated probability is classified into classes.
-Say, if predicted_value <img src="https://render.githubusercontent.com/render/math?math= geq 0.5">, then classify email as spam else as not spam.
+Say, if predicted_value > 0.5, then classify email as spam else as not spam.
 Decision boundary can be linear or non-linear. Polynomial order can be increased to get complex decision boundary.
 
 
-## **Q: Do we need to standardize the values present in the feature columns before we feed the data into a training logistic regression model?**
+## **Q: Which of the following evaluation metrics can not be applied in case of logistic regression output to compare with target?**
+
+1. AUC-ROC
+1. Accuracy
+1. Logloss
+1. Mean-Squared-Error
 
 **Difficulty:** Medium
 
 **Source:**
 
-[https://www.kodlogs.com/interview/blog/125/commonly-logistic-regression-questions-answers-interview](https://www.kodlogs.com/interview/blog/125/commonly-logistic-regression-questions-answers-interview)
+[https://www.analyticsvidhya.com/blog/2017/08/skilltest-logistic-regression/](https://www.analyticsvidhya.com/blog/2017/08/skilltest-logistic-regression/)
 
 **Answer:**
 
-No, we do not need to standardize the values present in the feature space, which we have to use to train the logistic regression model. So, the answer to this question would be FALSE. We choose to standardize all our values to help the function (usually gradient descent), which is responsible for making the algorithm converge on a value. Since this algorithm is relatively simple, it does not need the amounts to be scaled for it actually to have a significant difference in its performance.
+Solution: D
+
+Since, Logistic Regression is a classification algorithm so it’s output can not be real time value so mean squared error can not use for evaluating it
 
 
 ## **Q: Why sigmoid function?**
