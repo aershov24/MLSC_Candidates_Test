@@ -15,7 +15,7 @@
 
 **Answer:**
 
-The main difference between **regression** and **classification** is that the output variable in regression is numerical (or continuous) while that for classification is categorical (or discrete).Logistic regression is basically a supervised classification algorithm. However, the model builds a regression model just like linear regression to predict the probability that a given data entry belongs to the category numbered as “1”.
+The main difference between **regression** and **classification** is that the output variable in regression is numerical (or continuous) while that for classification is categorical (or discrete).**Logistic regression** is basically a supervised classification algorithm. However, the model builds a regression model just like linear regression to predict the probability that a given data entry belongs to the category numbered as “1”.
 For example, with binary classification, let ‘x’ be some feature and ‘y’ be the output which can be either `0` or `1`.
 The probability that the output is `1` given its input can be represented as:
 
@@ -41,11 +41,11 @@ $$g(x) = \frac{1}{1+e^{\smash{-x}}\right}$$
 [https://towardsdatascience.com/introduction-to-logistic-regression-66248243c148](https://towardsdatascience.com/introduction-to-logistic-regression-66248243c148)
 
 **Answer:**
-No, we cannot use Coast function `J(0)` in logistic regression. It end up being a non-convex function with many local minimums, in which it would be very difficult to minimize the cost value and find the global minimum. 
+No, we cannot use **Coast function** `J(0)` in logistic regression. It end up being a non-convex function with many local minimums, in which it would be very difficult to minimize the cost value and find the global minimum. 
 
 ![](https://miro.medium.com/max/3000/1*dPXwswig8RTCAjstnUZNGQ.png)
 
-For logistic regression, the Cost function is defined as:
+For logistic regression, the **Cost function** is defined as:
 
 $$−log(hθ(x)) if y = 1$$
 $$−log(1−hθ(x)) if y = 0$$
@@ -65,7 +65,7 @@ The above two functions can be compressed into a single function i.e.
 
 ![](https://miro.medium.com/max/1400/1*_52kKSp8zWgVTNtnE2eYrg.png)
 
-The main goal of **Gradient descent** is to minimize the cost value. i.e. `min J(θ)`. Now to minimize our cost function we need to run the gradient descent function on each parameter i.e.
+The main goal of **Gradient descent** is to minimize the cost value. i.e. `min J(θ)`. Now to minimize our **cost function** we need to run the **gradient descent** function on each parameter i.e.
 
 <p align="center"><img width="200" src="https://miro.medium.com/max/306/1*1--MUhjPjOL7oYdVo7R6gQ.png")</p>
 
@@ -90,7 +90,7 @@ The main goal of **Gradient descent** is to minimize the cost value. i.e. `min J
 
 **Answer:** 
 
-**Stochastic gradient descent** is used to solve the problem of finding the coefficients for the logistic regression model. There are two ways to find it:
+**Stochastic gradient descent** is used to solve the problem of finding the coefficients for the **logistic regression** model. There are two ways to find it:
 
   * Calculate a prediction using the current values of the coefficients.
   * Calculate new coefficient values based on the error in the prediction.
@@ -149,7 +149,7 @@ b2 = -0.09564513761
 
 * **Repeat the Process**
 
-We can repeat this process and update the model for each training instance in the dataset. A single iteration through the training dataset is called an epoch. It is common to repeat the stochastic gradient descent procedure for a fixed number of epochs.
+We can repeat this process and update the model for each training instance in the dataset. A single iteration through the training dataset is called an epoch. It is common to repeat the **stochastic gradient descent** procedure for a fixed number of epochs.
 
 At the end of epoch you can calculate error values for the model. Because this is a classification problem, it would be nice to get an idea of how accurate the model is at each iteration.
 
