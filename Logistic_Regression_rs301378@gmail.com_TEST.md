@@ -73,7 +73,7 @@ To minimize the cost function we have to run the gradient descent function on ea
 
 ![](https://miro.medium.com/max/875/1*Ecea3jVIRxK4Mkrh_Nie4w.jpeg)
 
-<center>Gradient Descent Simplified | Image: Andrew Ng Course </center>
+{text-align: center;}Gradient Descent Simplified | Image: Andrew Ng Course
 
 Gradient descent has an analogy in which we have to imagine ourselves at the top of a mountain valley and left stranded and blindfolded, our objective is to reach the bottom of the hill. Feeling the slope of the terrain around you is what everyone would do. Well, this action is analogous to calculating the gradient descent, and taking a step is analogous to one iteration of the update to the parameters.
 
