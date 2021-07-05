@@ -86,7 +86,7 @@ The main goal of **Gradient descent** is to minimize the cost value. i.e. `min J
 
 **Source:** 
 
-[https://medium.com/@nikethnarasimhan/logistic-regression-an-intuitive-approach-b1ece5b13c#:~:text=Logistic regression is a statistical,many more complex extensions exist](https://medium.com/@nikethnarasimhan/logistic-regression-an-intuitive-approach-b1ece5b13c#:~:text=Logistic%20regression%20is%20a%20statistical,many%20more%20complex%20extensions%20exist).
+[https://machinelearningmastery.com/logistic-regression-tutorial-for-machine-learning/](https://machinelearningmastery.com/logistic-regression-tutorial-for-machine-learning/).
 
 **Answer:** 
 
@@ -101,7 +101,7 @@ By updating the model for each training pattern we call this online learning. It
 
 * **Calculate Prediction**
 
-Let’s start off by assigning 0.0 to each coefficient and calculating the probability of the first training instance that belongs to class 0.
+Let’s start off by assigning `0.0` to each coefficient and calculating the probability of the first training instance that belongs to `class 0`.
 
 B0 = 0.0
 
@@ -125,13 +125,13 @@ We can calculate the new coefficient values using a simple update equation.
 
 b = b + alpha * (y – prediction) * prediction * (1 – prediction) * x
 
-Where b is the coefficient we are updating and prediction is the output of making a prediction using the model.
+Where `b` is the coefficient we are updating and prediction is the output of making a prediction using the model.
 
-Alpha is parameter that you must specify at the beginning of the training run. This is the learning rate and controls how much the coefficients (and therefore the model) changes or learns each time it is updated. Larger learning rates are used in online learning (when we update the model for each training instance). Good values might be in the range 0.1 to 0.3. Let’s use a value of 0.3.
+Alpha is parameter that you must specify at the beginning of the training run. This is the learning rate and controls how much the coefficients (and therefore the model) changes or learns each time it is updated. Larger learning rates are used in online learning (when we update the model for each training instance). Good values might be in the range `0.1` to `0.3`. Let’s use a value of `0.3`.
 
-You will notice that the last term in the equation is x, this is the input value for the coefficient. You will notice that the B0 does not have an input. This coefficient is often called the bias or the intercept and we can assume it always has an input value of 1.0. This assumption can help when implementing the algorithm using vectors or arrays.
+You will notice that the last term in the equation is `x`, this is the input value for the coefficient. You will notice that the `B0` does not have an input. This coefficient is often called the bias or the intercept and we can assume it always has an input value of `1.0`. This assumption can help when implementing the algorithm using vectors or arrays.
 
-Let’s update the coefficients using the prediction (0.5) and coefficient values (0.0) from the previous section.
+Let’s update the coefficients using the prediction `(0.5)` and coefficient values `(0.0)` from the previous section.
 
 b0 = b0 + 0.3 * (0 – 0.5) * 0.5 * (1 – 0.5) * 1.0
 
@@ -153,7 +153,7 @@ We can repeat this process and update the model for each training instance in th
 
 At the end of epoch you can calculate error values for the model. Because this is a classification problem, it would be nice to get an idea of how accurate the model is at each iteration.
 
-![](https://machinelearningmastery.com/wp-content/uploads/2016/02/Logistic-Regression-with-Gradient-Descent-Accuracy-versus-Iteration.png)
+<p align="center"><img width="500" src="https://machinelearningmastery.com/wp-content/uploads/2016/02/Logistic-Regression-with-Gradient-Descent-Accuracy-versus-Iteration.png")</p>
 
 <h5 align="center">Logistic Regression with Gradient Descent Accuracy versus Iteration</h5>
 
@@ -166,3 +166,5 @@ b0 = -0.4066054641
 b1 = 0.8525733164
 
 b2 = -1.104746259
+
+---
