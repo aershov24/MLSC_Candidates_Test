@@ -80,7 +80,7 @@ The main goal of **Gradient descent** is to minimize the cost value. i.e. `min J
 ![](https://miro.medium.com/max/875/1*SzVGKaga11mEwpJ1EpQJOw.png)
 
 ---
-## Q: Provide a mathematical intuition of Logistic Regression
+## Q: Why to use Stochastic Gradient Descent in Logistic Regression model?
 
 **Difficulty:** `Senior`
 
@@ -90,24 +90,79 @@ The main goal of **Gradient descent** is to minimize the cost value. i.e. `min J
 
 **Answer:** 
 
-Logistic regression can bee seen as a **transformation** from linear regression to logistic regression using the logistic function, also known as the **sigmoid function** or S(x):
+**Stochastic gradient descent** is used to solve the problem of finding the coefficients for the logistic regression model. There are two ways to find it:
 
-$$S(x) = \frac{1}{1+e^{-x}}$$
+  * Calculate a prediction using the current values of the coefficients.
+  * Calculate new coefficient values based on the error in the prediction.
 
-Given the linear model: 
+The process is repeated until the model is accurate enough (e.g. error drops to some desirable level) or for a fixed number iterations. You continue to update the model for training instances and correcting errors until the model is accurate enough orc cannot be made any more accurate. It is often a good idea to randomize the order of the training instances shown to the model to mix up the corrections made.
 
-$$y = b_0 + b_1 \cdot x$$
+By updating the model for each training pattern we call this online learning. It is also possible to collect up all of the changes to the model over all training instances and make one large update. This variation is called batch learning and might make a nice extension to this tutorial if you’re feeling adventurous.
 
-If we apply the sigmoid function to the above equation it results: 
+* **Calculate Prediction**
 
-$$S(y) = \frac{1}{1+e^{-y}} = p$$
+Let’s start off by assigning 0.0 to each coefficient and calculating the probability of the first training instance that belongs to class 0.
 
-where `p` is the probability and it takes values between 0 and 1. If we now apply the logit function to `p`, it results: 
+B0 = 0.0
 
-$$logit(p) = log(\frac{p}{1-p}) = b_0 + b_1 \cdot x$$
+B1 = 0.0
 
-The equation above represents the logistic regression. It fits a logistic curve to set of data where the dependent variable can only take the values 0 and 1. 
+B2 = 0.0
 
-The previous transformation can be illustrated in the following figure:
-![](https://miro.medium.com/max/3000/1*dPXwswig8RTCAjstnUZNGQ.png)
+The first training instance is: x1=2.7810836, x2=2.550537003, Y=0
 
+Using the above equation we can plug in all of these numbers and calculate a prediction:
+
+prediction = 1 / (1 + e^(-(b0 + b1*x1 + b2*x2)))
+
+prediction = 1 / (1 + e^(-(0.0 + 0.0*2.7810836 + 0.0*2.550537003)))
+
+prediction = 0.5
+
+* **Calculate New Coefficients**
+
+We can calculate the new coefficient values using a simple update equation.
+
+b = b + alpha * (y – prediction) * prediction * (1 – prediction) * x
+
+Where b is the coefficient we are updating and prediction is the output of making a prediction using the model.
+
+Alpha is parameter that you must specify at the beginning of the training run. This is the learning rate and controls how much the coefficients (and therefore the model) changes or learns each time it is updated. Larger learning rates are used in online learning (when we update the model for each training instance). Good values might be in the range 0.1 to 0.3. Let’s use a value of 0.3.
+
+You will notice that the last term in the equation is x, this is the input value for the coefficient. You will notice that the B0 does not have an input. This coefficient is often called the bias or the intercept and we can assume it always has an input value of 1.0. This assumption can help when implementing the algorithm using vectors or arrays.
+
+Let’s update the coefficients using the prediction (0.5) and coefficient values (0.0) from the previous section.
+
+b0 = b0 + 0.3 * (0 – 0.5) * 0.5 * (1 – 0.5) * 1.0
+
+b1 = b1 + 0.3 * (0 – 0.5) * 0.5 * (1 – 0.5) * 2.7810836
+
+b2 = b2 + 0.3 * (0 – 0.5) * 0.5 * (1 – 0.5) * 2.550537003
+
+or
+
+b0 = -0.0375
+
+b1 = -0.104290635
+
+b2 = -0.09564513761
+
+* **Repeat the Process**
+
+We can repeat this process and update the model for each training instance in the dataset. A single iteration through the training dataset is called an epoch. It is common to repeat the stochastic gradient descent procedure for a fixed number of epochs.
+
+At the end of epoch you can calculate error values for the model. Because this is a classification problem, it would be nice to get an idea of how accurate the model is at each iteration.
+
+![](https://machinelearningmastery.com/wp-content/uploads/2016/02/Logistic-Regression-with-Gradient-Descent-Accuracy-versus-Iteration.png)
+
+<h5 align="center">Logistic Regression with Gradient Descent Accuracy versus Iteration</h5>
+
+You can see that the model very quickly achieves 100% accuracy on the training dataset.
+
+The coefficients calculated after 10 epochs of stochastic gradient descent are:
+
+b0 = -0.4066054641
+
+b1 = 0.8525733164
+
+b2 = -1.104746259
