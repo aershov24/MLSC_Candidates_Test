@@ -57,6 +57,6 @@ https://towardsdatascience.com/5-ways-to-detect-outliers-that-every-data-scienti
 **Answer:**
 *   A **Cost Function** is something we want to minimize. For example, our cost function might be the sum of squared errors over the training set like:
 
-$$J(\theta_0,\theta_1)=\frac{1}{2m}\sum\limits_{i=1}^m (h_{\theta}(x^{(i)})-y^{(i)})^2$$
+$J(\theta_0,\theta_1)=\frac{1}{2m}\sum\limits_{i=1}^m (h_{\theta}(x^{(i)})-y^{(i)})^2$
 
 *  **Gradient Descent** is a method for finding the minimum of a function of multiple variables.
