@@ -65,7 +65,7 @@ The above two functions can be compressed into a single function i.e.
 
 ![](https://miro.medium.com/max/1400/1*_52kKSp8zWgVTNtnE2eYrg.png)
 
-The main goal of Gradient descent is to minimize the cost value. i.e. `min J(θ)`. Now to minimize our cost function we need to run the gradient descent function on each parameter i.e.
+The main goal of **Gradient descent** is to minimize the cost value. i.e. `min J(θ)`. Now to minimize our cost function we need to run the gradient descent function on each parameter i.e.
 
 <p align="center"><img width="200" src="https://miro.medium.com/max/306/1*1--MUhjPjOL7oYdVo7R6gQ.png")</p>
 
@@ -75,7 +75,7 @@ The main goal of Gradient descent is to minimize the cost value. i.e. `min J(θ)
 
 <h5 align="center">Gradient Descent Simplified | Image: Andrew Ng Course</h5>
 
-Gradient descent has an analogy in which we have to imagine ourselves at the top of a mountain valley and left stranded and blindfolded, our objective is to reach the bottom of the hill. Feeling the slope of the terrain around you is what everyone would do. Well, this action is analogous to calculating the gradient descent, and taking a step is analogous to one iteration of the update to the parameters.
+**Gradient descent** has an analogy in which we have to imagine ourselves at the top of a mountain valley and left stranded and blindfolded, our objective is to reach the bottom of the hill. Feeling the slope of the terrain around you is what everyone would do. Well, this action is analogous to calculating the gradient descent, and taking a step is analogous to one iteration of the update to the parameters.
 
 ![](https://miro.medium.com/max/875/1*SzVGKaga11mEwpJ1EpQJOw.png)
 
