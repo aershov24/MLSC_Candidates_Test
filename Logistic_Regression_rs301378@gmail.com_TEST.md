@@ -32,16 +32,38 @@ $$g(x) = \frac{1}{1+e^{\smash{-x}}\right}$$
 
 ---
 
-## Q: 
+## Q: Is it possible to use Coast function in logistic regression? How it is different from Gradient Decent?
 
 **Difficulty:** `Medium`
 
 **Source:** 
 
-[https://careerfoundry.com/en/blog/data-analytics/what-is-logistic-regression/](https://careerfoundry.com/en/blog/data-analytics/what-is-logistic-regression/)
+[https://towardsdatascience.com/introduction-to-logistic-regression-66248243c148](https://towardsdatascience.com/introduction-to-logistic-regression-66248243c148)
 
 **Answer:**
+No, we cannot use Coast function J(0) in logistic regression. It end up being a non-convex function with many local minimums, in which it would be very difficult to minimize the cost value and find the global minimum. 
 
+![](https://miro.medium.com/max/3000/1*dPXwswig8RTCAjstnUZNGQ.png)
+
+For logistic regression, the Cost function is defined as:
+
+$$−log(hθ(x)) if y = 1$$
+$$−log(1−hθ(x)) if y = 0$$
+
+Coast(h_{0}(x),y) = log \begin{cases}
+                        −log(hθ(x))  &\text{if } y = 1 \\
+                        −log(1−hθ(x)) &\text{if } y = 0
+                        \end{cases}
+
+In case y=1, the output (i.e. the cost to pay) approaches to 0 as hθ(x) approaches to 1. Conversely, the cost to pay grows to infinity as hθ(x) approaches to 0. You can clearly see it in the plot below, left side. This is a desirable property: we want a bigger penalty as the algorithm predicts something far away from the actual value. If the label is y=1 but the algorithm predicts hθ(x)=0, the outcome is completely wrong.
+
+Conversely, the same intuition applies when y=0, depicted in the plot below, right side. Bigger penalties when the label is y=0 but the algorithm predicts hθ(x)=1.
+
+![](https://miro.medium.com/max/875/1*ejwj2sFEgSA5yisYvbtSKQ.png)
+
+The above two functions can be compressed into a single function i.e.
+
+![](https://miro.medium.com/max/1400/1*_52kKSp8zWgVTNtnE2eYrg.png)
 
 ---
 ## Q: Provide a mathematical intuition of Logistic Regression
@@ -73,5 +95,5 @@ $$logit(p) = log(\frac{p}{1-p}) = b_0 + b_1 \cdot x$$
 The equation above represents the logistic regression. It fits a logistic curve to set of data where the dependent variable can only take the values 0 and 1. 
 
 The previous transformation can be illustrated in the following figure:
-![](https://miro.medium.com/max/963/1*1cFchLVevekWRNRW981Krg.png)
+![](https://miro.medium.com/max/3000/1*dPXwswig8RTCAjstnUZNGQ.png)
 
