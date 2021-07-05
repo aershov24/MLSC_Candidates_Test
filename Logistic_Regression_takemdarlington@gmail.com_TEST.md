@@ -55,3 +55,26 @@ The distance is known as **Sum of Squared Residuals(SSE)** and the method is kno
 $sum of squarred residue = \sum (y - \bar{y})^2$
 
 ---
+
+## Q: Eplain Gradient Descent to your Grandmother
+
+**Difficulty:** `Senior`
+
+**Source:**
+
+https://towardsdatascience.com/gradient-descent-explained-9b953fc0d2c
+
+**Answer:**
+
+Gradient descent is an optimization algorithm that’s used when training a machine learning model and is based on a convex function and tweaks its parameters iteratively to minimize a given function to its local minimum(that is, *slope = 0*).
+
+For a start, we have to select a random bias and weights, and then iterate over the slope function to get a slope of 0.
+
+![Linear reg](./img/graddes.png)
+
+The way we change update the value of the bias and weights is through a variable called the learning rate. We have to be wise on the learning rate because choosing:
+* A small leaning rate may lead to the model to take some time to learn
+* A large learning rate will make the model converge as our pointer will shoot and we’ll not be able to get to minima.
+
+
+![Linear reg](./img/learningrate.png)
