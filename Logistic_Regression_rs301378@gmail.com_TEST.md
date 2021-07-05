@@ -71,7 +71,7 @@ The main goal of Gradient descent is to minimize the cost value. i.e. min J(θ).
 
 <h5 align="center">To minimize the cost function we have to run the gradient descent function on each parameter</h5>
 
-<p align="center">![](https://miro.medium.com/max/875/1*Ecea3jVIRxK4Mkrh_Nie4w.jpeg)</p>
+<p align="center"><img width="200" src="https://miro.medium.com/max/875/1*Ecea3jVIRxK4Mkrh_Nie4w.jpeg")</p>
 
 <h5 align="center">Gradient Descent Simplified | Image: Andrew Ng Course</h5>
 
