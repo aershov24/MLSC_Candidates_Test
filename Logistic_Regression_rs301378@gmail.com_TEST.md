@@ -15,18 +15,18 @@
 
 **Answer:**
 
-The main difference between regression and classification is that the output variable in regression is numerical (or continuous) while that for classification is categorical (or discrete).Logistic regression is basically a supervised classification algorithm. However, the model builds a regression model just like linear regression to predict the probability that a given data entry belongs to the category numbered as “1”.
-For example, with binary classification, let ‘x’ be some feature and ‘y’ be the output which can be either 0 or 1.
-The probability that the output is 1 given its input can be represented as:
+The main difference between **regression** and **classification** is that the output variable in regression is numerical (or continuous) while that for classification is categorical (or discrete).Logistic regression is basically a supervised classification algorithm. However, the model builds a regression model just like linear regression to predict the probability that a given data entry belongs to the category numbered as “1”.
+For example, with binary classification, let ‘x’ be some feature and ‘y’ be the output which can be either `0` or `1`.
+The probability that the output is `1` given its input can be represented as:
 
 $$p(y=1|x)$$
 
 If we predict the probability via linear regression, we can state it as:
 
-$$p(X) = β0 + β1X
+$$p(X) = β0 + β1X$$
 
-where, p(x) = p(y=1|x)
-Logistic regression model can generate the predicted probability as any number ranging from negative to positive infinity, whereas probability of an outcome can only lie between 0< P(x)<1. However, to mitigate the problem of outliers a sigmoid function is used in logistic regression. The linear equation is put in the sigmoid function.
+where, `p(x) = p(y=1|x)`
+Logistic regression model can generate the predicted probability as any number ranging from negative to positive infinity, whereas probability of an outcome can only lie between `0< P(x)<1`. However, to mitigate the problem of outliers a sigmoid function is used in logistic regression. The linear equation is put in the sigmoid function.
 
 $$g(x) = \frac{1}{1+e^{\smash{-x}}\right}$$
 
@@ -41,7 +41,7 @@ $$g(x) = \frac{1}{1+e^{\smash{-x}}\right}$$
 [https://towardsdatascience.com/introduction-to-logistic-regression-66248243c148](https://towardsdatascience.com/introduction-to-logistic-regression-66248243c148)
 
 **Answer:**
-No, we cannot use Coast function J(0) in logistic regression. It end up being a non-convex function with many local minimums, in which it would be very difficult to minimize the cost value and find the global minimum. 
+No, we cannot use Coast function `J(0)` in logistic regression. It end up being a non-convex function with many local minimums, in which it would be very difficult to minimize the cost value and find the global minimum. 
 
 ![](https://miro.medium.com/max/3000/1*dPXwswig8RTCAjstnUZNGQ.png)
 
@@ -55,9 +55,9 @@ Coast(h_{0}(x),y) = log \begin{cases}
                         −log(1−hθ(x)) &\text{if } y = 0
                         \end{cases}
 
-In case y=1, the output (i.e. the cost to pay) approaches to 0 as hθ(x) approaches to 1. Conversely, the cost to pay grows to infinity as hθ(x) approaches to 0. You can clearly see it in the plot below, left side. This is a desirable property: we want a bigger penalty as the algorithm predicts something far away from the actual value. If the label is y=1 but the algorithm predicts hθ(x)=0, the outcome is completely wrong.
+In case `y=1`, the output (i.e. the cost to pay) approaches to `0` as `hθ(x)` approaches to `1`. Conversely, the cost to pay grows to infinity as `hθ(x)` approaches to `0`. You can clearly see it in the plot below, left side. This is a desirable property: we want a bigger penalty as the algorithm predicts something far away from the actual value. If the label is `y=1` but the algorithm predicts `hθ(x)=0`, the outcome is completely wrong.
 
-Conversely, the same intuition applies when y=0, depicted in the plot below, right side. Bigger penalties when the label is y=0 but the algorithm predicts hθ(x)=1.
+Conversely, the same intuition applies when `y=0`, depicted in the plot below, right side. Bigger penalties when the label is `y=0` but the algorithm predicts `hθ(x)=1`.
 
 ![](https://miro.medium.com/max/875/1*ejwj2sFEgSA5yisYvbtSKQ.png)
 
@@ -65,7 +65,7 @@ The above two functions can be compressed into a single function i.e.
 
 ![](https://miro.medium.com/max/1400/1*_52kKSp8zWgVTNtnE2eYrg.png)
 
-The main goal of Gradient descent is to minimize the cost value. i.e. min J(θ). Now to minimize our cost function we need to run the gradient descent function on each parameter i.e.
+The main goal of Gradient descent is to minimize the cost value. i.e. `min J(θ)`. Now to minimize our cost function we need to run the gradient descent function on each parameter i.e.
 
 <p align="center"><img width="200" src="https://miro.medium.com/max/306/1*1--MUhjPjOL7oYdVo7R6gQ.png")</p>
 
