@@ -1,5 +1,9 @@
 # Topic: Logistic regression
+**Author**: Rohit Sharma
 
+**QAs Total:** 3
+
+---
 
 ## Q: Why is logistic regression called regression and not classification?
 
