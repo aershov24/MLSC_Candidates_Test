@@ -18,12 +18,16 @@
 The main difference between regression and classification is that the output variable in regression is numerical (or continuous) while that for classification is categorical (or discrete).Logistic regression is basically a supervised classification algorithm. However, the model builds a regression model just like linear regression to predict the probability that a given data entry belongs to the category numbered as “1”.
 For example, with binary classification, let ‘x’ be some feature and ‘y’ be the output which can be either 0 or 1.
 The probability that the output is 1 given its input can be represented as:
+
 $$p(y=1|x)$$
 
 If we predict the probability via linear regression, we can state it as:
+
 $$p(X) = β0 + β1X
+
 where, p(x) = p(y=1|x)
 Logistic regression model can generate the predicted probability as any number ranging from negative to positive infinity, whereas probability of an outcome can only lie between 0< P(x)<1. However, to mitigate the problem of outliers a sigmoid function is used in logistic regression. The linear equation is put in the sigmoid function.
+
 $$g(x) = \frac{1}{1+e^{\smash{-x}}\right}$$
 
 ---
