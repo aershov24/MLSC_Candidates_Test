@@ -67,7 +67,7 @@ The above two functions can be compressed into a single function i.e.
 
 The main goal of Gradient descent is to minimize the cost value. i.e. min J(θ). Now to minimize our cost function we need to run the gradient descent function on each parameter i.e.
 
-<p align="center">![](https://miro.medium.com/max/306/1*1--MUhjPjOL7oYdVo7R6gQ.png)</p>
+<p align="center"><img width="200" src="https://miro.medium.com/max/306/1*1--MUhjPjOL7oYdVo7R6gQ.png")</p>
 
 <h5 align="center">To minimize the cost function we have to run the gradient descent function on each parameter</h5>
 
