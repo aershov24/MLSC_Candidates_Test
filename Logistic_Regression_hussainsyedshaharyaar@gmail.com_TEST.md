@@ -15,7 +15,7 @@ Note: Please use light theme otherwise some of the images may not be clearly vis
 **Source**: https://towardsdatascience.com/the-basics-logistic-regression-and-regularization-828b0d2d206c
 
 
-**Answer**: If logistic regression model is overfitting it means on training data it gives good performance but on test data it is not giving as good performance as it gave on training data. This means model has high variance. To counter this issue lasso regularization (L1 Regularization) and ridge regularization (L2 Regularization) can be used for decreasing the model variance that will ultimately decrease the model overfitting. For performing the regularization, we will add regularization terms to our cost function as shown below:
+**Answer**: If logistic regression model is overfitting, it means that on training data it gives good performance; but on test data it is not giving as good performance as it gave on training data. This means model has high variance. To counter this issue lasso regularization (L1 Regularization) and ridge regularization (L2 Regularization) can be used for decreasing the model variance that will ultimately decrease the model overfitting. For performing the regularization, we will add regularization terms to our cost function as shown below:
 
 Cost Function:
 
@@ -45,7 +45,7 @@ $$\sum\limits_{i=1}^m(y - y^{(i)})^2 + \lambda\sum\limits_{j=0}^p ||\beta_j||^2$
 Here, we simply divide the data into train and test set.
 
 ### 2. k-fold cross-validation
-In k-cross validation we divide the training dataset into k-sets or k-folds in which k-1 folds are used for training the model and remaining one fold is used for testing the model with given hyperparamters. Once we select the model with the best hyperparameters then we run that model on our test dataset. Benefit of k-cross validation is that it can help in determining the best parameters for the model. Moreover k-fold cross-validation is better compared to test/validation/test split.
+In k-cross validation we divide the training dataset into "k" number of sets or folds in which "k-1" folds are used for training the model and remaining one fold is used for testing the model with given hyperparamters. Once we select the model with the best hyperparameters then we run that model on our test dataset. Benefit of k-cross validation is that it can help in determining the best parameters for the model. Moreover k-fold cross-validation is better compared to test/validation/test split.
 
 #### Pipeline:
 ![image](https://user-images.githubusercontent.com/32700434/124615602-dd08dd00-de8e-11eb-9d8d-c21ccc00cfad.png)
@@ -69,6 +69,8 @@ In bootstrapping, we randomly take repeated sub-samples from the same dataset an
 
 **Details**: Since cost function is discontinuous then it means we can not use Batch Gradient Descent (BGD) or Stochastic Gradient Descent (SGD) because both of these algorithms rely on taking derivative of cost function in weight updation process If cost function is discontinuous then its derivative can not be calculated according to theory of calculus.
 
-**Answer**: We can use Genetic Algorithm (Evolutionary Algorithm) because it does not require gradients to be calculated. It works in the fashion of natural selection where first of all population of weights are initialized. If we have 10 weights then we can initialize 1000 sets of those weights. Then for each of these sets we will calculate their fitness using our discontinuous cost function. Then we will select those sets that have good fitness and perform their crossover. Then we perform mutation and repeat the process again untill given number of iterations are reached. Similarly another algorithm called Particle Swarm Optimization can also be used for this purpose because it does not rely on gradient calculation.
+**Answer**: We can use Genetic Algorithm (Evolutionary Algorithm) because it does not require gradients to be calculated. It works in the fashion of natural selection where first of all population of weights are initialized. If we have 10 weights then we can initialize 1000 sets of those weights. Then for each of these sets we will calculate their fitness using our discontinuous cost function. Then we will select those sets that have good fitness and perform their crossover. Then we perform mutation and repeat the whole process process again untill given number of iterations are reached. Similarly another algorithm called Particle Swarm Optimization can also be used for this purpose because it does not rely on gradient calculation.
+
+![](https://www.mdpi.com/symmetry/symmetry-12-01758/article_deploy/html/images/symmetry-12-01758-g001-550.jpg)
 
 
