@@ -1,3 +1,5 @@
+Note: Please use light theme otherwise some of the images may not be clearly visible.
+
 # Topic: Logistic Regression
 
 **Author**: Syed Shaharyaar Hussain
