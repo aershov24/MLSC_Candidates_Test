@@ -38,6 +38,9 @@ $$\sum\limits_{i=1}^m(y - y^{(i)})^2 + \lambda\sum\limits_{j=0}^p ||\beta_j||^2$
 
 1. Test/Train Split
 2. k-fold cross-validation
+
+![image](https://user-images.githubusercontent.com/32700434/124613420-a29e4080-de8c-11eb-859f-a0fb504b8026.png)
+
 3. Leave-one-out cross-validation
 4. Bootstrapping
 
