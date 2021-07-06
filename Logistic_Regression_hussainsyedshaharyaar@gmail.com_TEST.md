@@ -71,6 +71,7 @@ In bootstrapping, we randomly take repeated sub-samples from the same dataset an
 
 **Answer**: We can use Genetic Algorithm (Evolutionary Algorithm) because it does not require gradients to be calculated. It works in the fashion of natural selection where first of all population of weights are initialized. If we have 10 weights then we can initialize 1000 sets of those weights. Then for each of these sets we will calculate their fitness using our discontinuous cost function. Then we will select those sets that have good fitness and perform their crossover. Then we perform mutation and repeat the whole process process again untill given number of iterations are reached. Similarly another algorithm called Particle Swarm Optimization can also be used for this purpose because it does not rely on gradient calculation.
 
+#### Genetic Algorithm Flowchart:
 ![](https://www.mdpi.com/symmetry/symmetry-12-01758/article_deploy/html/images/symmetry-12-01758-g001-550.jpg)
 
 
