@@ -1,2 +1,16 @@
-# <h1>Topic: Losgistic Regression</h1>
-# <h3>Author: Syed Shaharyaar Hussain</h3>
+# Topic: Logistic Regression
+
+**Author**: Syed Shaharyaar Hussain
+
+**QAs Total**: 3
+
+---
+
+## Q: If your logistic regression is overfitting then how you can you improve model performance?
+
+**Difficulty**: Junior
+
+**Source**: https://towardsdatascience.com/the-basics-logistic-regression-and-regularization-828b0d2d206c
+
+**Answer**: If logistic regression model is overfitting it means on training data it gives good performance but on test data it is not giving as good performance as it gave on training data. This means model has high variance. To counter this issue lasso regularization and ridge regularization can be used for decreasing the model variance that will ultimately decrease the model overfitting.
+
