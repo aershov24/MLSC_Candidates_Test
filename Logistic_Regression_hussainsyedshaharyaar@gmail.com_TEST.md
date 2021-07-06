@@ -61,7 +61,7 @@ In bootstrapping, we randomly take repeated sub-samples from the same dataset an
 
 ---
 
-# Q: If cost function to be optimized is discontinuous then what algorithm can be used for training logistic regression?
+# Q: If cost function to be optimized is discontinuous then what algorithm can be used for training logistic regression model?
 
 **Difficulty**: Senior
 
