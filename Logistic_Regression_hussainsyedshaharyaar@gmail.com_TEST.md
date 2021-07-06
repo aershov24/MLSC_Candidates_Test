@@ -54,7 +54,11 @@ In k-cross validation we divide the training dataset into k-sets or k-folds in w
 ![image](https://user-images.githubusercontent.com/32700434/124613420-a29e4080-de8c-11eb-859f-a0fb504b8026.png)
 
 ### 3. Leave-one-out cross-validation
-It is a variant of k-fold cross-validation in which number of folds "k" equals the number of samples "N" present in the data set. In the end we take the average accuracy as a result.
+It is a variant of k-fold cross-validation in which number of folds "k" equals the number of samples "N" present in the data set.
 
 ### 4. Bootstrapping
 In bootstrapping, we randomly take repeated sub-samples from the same dataset and evaluate the model performance. In the end, we take the average accuracy as a result.
+
+---
+
+# Q:  `n 0
