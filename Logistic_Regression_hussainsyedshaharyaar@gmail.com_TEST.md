@@ -12,9 +12,8 @@ Note: Please use light theme otherwise some of the images may not be clearly vis
 
 **Difficulty**: Junior
 
-**Sources**: 
-1. https://towardsdatascience.com/the-basics-logistic-regression-and-regularization-828b0d2d206c
-2. https://scikit-learn.org/stable/modules/cross_validation.html
+**Source**: https://towardsdatascience.com/the-basics-logistic-regression-and-regularization-828b0d2d206c
+
 
 **Answer**: If logistic regression model is overfitting it means on training data it gives good performance but on test data it is not giving as good performance as it gave on training data. This means model has high variance. To counter this issue lasso regularization (L1 Regularization) and ridge regularization (L2 Regularization) can be used for decreasing the model variance that will ultimately decrease the model overfitting. For performing the regularization, we will add regularization terms to our cost function as shown below:
 
@@ -36,7 +35,9 @@ $$\sum\limits_{i=1}^m(y - y^{(i)})^2 + \lambda\sum\limits_{j=0}^p ||\beta_j||^2$
 
 **Difficulty**: Medium
 
-**Source**: https://onlinelibrary.wiley.com/doi/full/10.1111/j.1553-2712.2011.01185.x
+**Sources**: 
+1. https://onlinelibrary.wiley.com/doi/full/10.1111/j.1553-2712.2011.01185.x
+2. https://scikit-learn.org/stable/modules/cross_validation.html
 
 **Answer**: Following are the internal validation techniques that can be used for testing the effectiveness of logistic model:
 
