@@ -38,11 +38,19 @@ $$\sum\limits_{i=1}^m(y - y^{(i)})^2 + \lambda\sum\limits_{j=0}^p ||\beta_j||^2$
 
 **Answer**: Following are the internal validation techniques that can be used for testing the effectiveness of logistic model:
 
-1. Test/Train Split
-2. k-fold cross-validation
+### 1. Test/Train Split
+Here, we simply divide the data into train and test set.
+
+### 2. k-fold cross-validation
+In k-cross validation we divide the training dataset into k-sets or k-folds in which k-1 folds are used for training the model and remaining one fold is used for testing the model with given hyperparamters. Once we select the model with the best hyperparameters then we run that model on our test dataset. Benefit of k-cross validation is that it can help in determining the best parameters for the model. Moreover k-fold cross-validation is better compared to test/validation/test split.
+
+![image](https://user-images.githubusercontent.com/32700434/124615602-dd08dd00-de8e-11eb-9d8d-c21ccc00cfad.png)
+
 
 ![image](https://user-images.githubusercontent.com/32700434/124613420-a29e4080-de8c-11eb-859f-a0fb504b8026.png)
 
-3. Leave-one-out cross-validation
-4. Bootstrapping
+### 3. Leave-one-out cross-validation
+It is a variant of k-fold cross-validation in which number of folds "k" equals the number of samples "N" present in the data set. In the end we take the average accuracy as a result.
 
+### 4. Bootstrapping
+In bootstrapping, we randomly take repeated sub-samples from the same dataset and evaluate the model performance. In the end, we take the average accuracy as a result.
