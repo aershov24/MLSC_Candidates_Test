@@ -44,10 +44,10 @@ Here, we simply divide the data into train and test set.
 ### 2. k-fold cross-validation
 In k-cross validation we divide the training dataset into k-sets or k-folds in which k-1 folds are used for training the model and remaining one fold is used for testing the model with given hyperparamters. Once we select the model with the best hyperparameters then we run that model on our test dataset. Benefit of k-cross validation is that it can help in determining the best parameters for the model. Moreover k-fold cross-validation is better compared to test/validation/test split.
 
-Pipeline:
+#### Pipeline:
 ![image](https://user-images.githubusercontent.com/32700434/124615602-dd08dd00-de8e-11eb-9d8d-c21ccc00cfad.png)
 
-K-fold cross-validation scheme:
+#### K-fold cross-validation scheme:
 ![image](https://user-images.githubusercontent.com/32700434/124613420-a29e4080-de8c-11eb-859f-a0fb504b8026.png)
 
 ### 3. Leave-one-out cross-validation
