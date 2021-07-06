@@ -67,7 +67,7 @@ In bootstrapping, we randomly take repeated sub-samples from the same dataset an
 
 **Source**: https://www.mdpi.com/2073-8994/12/11/1758/htm
 
-**Details**: Since cost function is discontinuous then it means we can not use Batch Gradient Descent (BGD) or Stochastic Gradient Descent (SGD) because both of these algorithms rely on taking derivative of cost function in weight updation process If cost function is discontinuous then its derivative can not be calculated according to theory of calculus.
+**Details**: Since cost function is discontinuous then it means we can not use Batch Gradient Descent (BGD) or Stochastic Gradient Descent (SGD) because both of these algorithms rely on taking derivative of cost function in weight updation process. If cost function is discontinuous then its derivative can not be calculated according to theory of calculus.
 
 **Answer**: We can use Genetic Algorithm (Evolutionary Algorithm) because it does not require gradients to be calculated. It works in the fashion of natural selection where first of all population of weights are initialized. If we have 10 weights then we can initialize 1000 sets of those weights. Then for each of these sets we will calculate their fitness using our discontinuous cost function. Then we will select those sets that have good fitness and perform their crossover. Then we perform mutation and repeat the whole process process again untill given number of iterations are reached. Similarly another algorithm called Particle Swarm Optimization can also be used for this purpose because it does not rely on gradient calculation.
 
