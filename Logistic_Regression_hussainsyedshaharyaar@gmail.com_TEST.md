@@ -6,7 +6,7 @@
 
 ---
 
-## Q: If your logistic regression is overfitting then how can you improve model performance?
+## Q: If your logistic regression is overfitting then what parametric techniques you can use to improve model performance?
 
 **Difficulty**: Junior
 
