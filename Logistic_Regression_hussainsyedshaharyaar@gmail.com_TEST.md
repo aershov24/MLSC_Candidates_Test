@@ -12,8 +12,12 @@
 
 **Source**: https://towardsdatascience.com/the-basics-logistic-regression-and-regularization-828b0d2d206c
 
-**Answer**: If logistic regression model is overfitting it means on training data it gives good performance but on test data it is not giving as good performance as it gave on training data. This means model has high variance. To counter this issue lasso regularization and ridge regularization can be used for decreasing the model variance that will ultimately decrease the model overfitting.
+**Answer**: If logistic regression model is overfitting it means on training data it gives good performance but on test data it is not giving as good performance as it gave on training data. This means model has high variance. To counter this issue lasso regularization (L1 Regularization) and ridge regularization (L2 Regularization) can be used for decreasing the model variance that will ultimately decrease the model overfitting.
 
 Lasso Regularization:
 
-![](https://miro.medium.com/max/244/1*Ee0Zu_4tZzqnHnHrgWGxTQ.png)
+$$\sum\limits_{i=1}^m(y - y^{(i)})^2 + \lambda\sum\limits_{j=0}^p ||\beta_j||$$
+
+Ridge Regularization:
+
+$$\sum\limits_{i=1}^m(y - y^{(i)})^2 + \lambda\sum\limits_{j=0}^p ||\beta_j||^2$$
