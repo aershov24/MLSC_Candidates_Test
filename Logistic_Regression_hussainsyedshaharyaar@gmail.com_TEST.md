@@ -25,3 +25,19 @@ $$\sum\limits_{i=1}^m(y - y^{(i)})^2 + \lambda\sum\limits_{j=0}^p ||\beta_j||$$
 Ridge Regularization:
 
 $$\sum\limits_{i=1}^m(y - y^{(i)})^2 + \lambda\sum\limits_{j=0}^p ||\beta_j||^2$$
+
+---
+
+## Q: What are the internal vaildation schemes that can be used in logistic regression to test the effectiveness of model?
+
+**Difficulty**: Mid
+
+**Source**: https://onlinelibrary.wiley.com/doi/full/10.1111/j.1553-2712.2011.01185.x
+
+**Answer**: Following are the internal validation techniques that can be used for testing the effectiveness of logistic model:
+
+1. Test/Train Split
+2. k-fold cross-validation
+3. Leave-one-out cross-validation
+4. Bootstrapping
+
