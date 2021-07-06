@@ -65,7 +65,7 @@ In bootstrapping, we randomly take repeated sub-samples from the same dataset an
 
 **Difficulty**: Senior
 
-**Source**: Self-Experience
+**Source**: https://www.mdpi.com/2073-8994/12/11/1758/htm
 
 **Details**: Since cost function is discontinuous then it means we can not use Batch Gradient Descent (BGD) or Stochastic Gradient Descent (SGD) because both of these algorithms rely on taking derivative of cost function in weight updation process If cost function is discontinuous then its derivative can not be calculated according to theory of calculus.
 
